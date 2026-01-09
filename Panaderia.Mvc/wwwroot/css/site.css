@@ -1,0 +1,97 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Fondo general */
+body {
+    background-color: #FFF8E1;
+    margin-bottom: 60px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #5D4037 !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #FFF8E1 !important;
+}
+
+    .navbar-brand:hover {
+        color: #F3E5AB !important;
+    }
+
+/* TÍTULOS */
+h1, h2, h3, h4 {
+    color: #5D4037;
+}
+
+/* BOTONES */
+.btn-primary {
+    background-color: #8D6E63;
+    border-color: #8D6E63;
+}
+
+.btn-primary:hover {
+    background-color: #7B5E57;
+    border-color: #7B5E57;
+}
+
+.btn-success {
+    background-color: #C62828;
+    border-color: #C62828;
+}
+
+.btn-success:hover {
+    background-color: #B71C1C;
+    border-color: #B71C1C;
+}
+
+.btn-warning {
+    background-color: #F3E5AB;
+    border-color: #F3E5AB;
+    color: #5D4037;
+}
+
+/* CARDS */
+.card {
+    border-radius: 14px;
+}
+
+/* BADGES DE STOCK */
+.badge.bg-success {
+    background-color: #8D6E63 !important;
+}
+
+.badge.bg-warning {
+    background-color: #F3E5AB !important;
+    color: #5D4037 !important;
+}
+
+.badge.bg-danger {
+    background-color: #C62828 !important;
+}
+
+.text-muted {
+    color: #8D6E63 !important;
+}
+
+table th {
+    font-size: 0.95rem;
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panaderia.Api", "Panaderia.Api\Panaderia.Api.csproj", "{21D2C3CC-41EC-4A3D-8B60-415E8F899D67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panaderia.Mvc", "Panaderia.Mvc\Panaderia.Mvc.csproj", "{FA66E6D0-8485-413A-AA8C-FBCB48210379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21D2C3CC-41EC-4A3D-8B60-415E8F899D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D2C3CC-41EC-4A3D-8B60-415E8F899D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D2C3CC-41EC-4A3D-8B60-415E8F899D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D2C3CC-41EC-4A3D-8B60-415E8F899D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA66E6D0-8485-413A-AA8C-FBCB48210379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA66E6D0-8485-413A-AA8C-FBCB48210379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA66E6D0-8485-413A-AA8C-FBCB48210379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA66E6D0-8485-413A-AA8C-FBCB48210379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B167658A-8460-4447-99A1-02BCF3A72591}
+	EndGlobalSection
+EndGlobal

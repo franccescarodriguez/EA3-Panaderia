@@ -1,0 +1,83 @@
+﻿@model List<ProductoViewModel>
+
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<div class="container mt-4">
+    <div class="text-center mb-4">
+        <img src="~/images/logo.png"
+             alt="Flancita Logo"
+             style="height:140px;"
+             class="mb-3" />
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold">🥐 Productos de la Panadería</h2>
+        <a asp-action="Create" class="btn btn-primary">
+            + Nuevo Producto
+        </a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <table class="table table-hover align-middle">
+                <thead style="background-color:#8D6E63; color:#FFF8E1; font-weight:600;">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio (S/.)</th>
+                        <th>Stock</th>
+                        <th class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model == null || !Model.Any())
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center text-muted py-4">
+                                No hay productos registrados 🥐
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Nombre</td>
+                                <td>S/. @item.Precio.ToString("0.00")</td>
+                                <td>
+                                    @if (item.Stock <= 5)
+                                    {
+                                        <span class="badge bg-danger">Bajo (@item.Stock)</span>
+                                    }
+                                    else if (item.Stock <= 20)
+                                    {
+                                        <span class="badge bg-warning text-dark">Medio (@item.Stock)</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-success">Disponible (@item.Stock)</span>
+                                    }
+                                </td>
+
+                                <td class="text-center">
+                                    <a asp-action="Edit" asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-warning me-1">
+                                        Editar
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-danger"
+                                       onclick="return confirm('¿Seguro que deseas eliminar este producto?');">
+                                        Eliminar
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
